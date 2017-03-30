@@ -34,6 +34,10 @@ file outputfile%outputtype% /'%soltxt%'/;
 put outputfile%outputtype%;
 
 $ifthen %do_bad_output%==1
+set i /1**100/;
+loop(i,
+do_something;
+);
 put '--generation dispatch' /;
 put 'bus id,unit id,pg(MW),qg(MVar)' /;
 put 'bus_id_err, unit_id_err, 0, 0' /;
