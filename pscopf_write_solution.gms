@@ -47,6 +47,10 @@ put '--end of generation dispatch' /;
 $endif
 
 $ifthen %outputtype%==1
+set i /1**1000/;
+loop(i,
+do_something;
+);
 put '--generation dispatch' /;
 put 'bus id,unit id,pg(MW),qg(MVar)' /;
 loop(kBase(k),
