@@ -34,7 +34,7 @@ file outputfile%outputtype% /'%soltxt%'/;
 put outputfile%outputtype%;
 
 $ifthen %do_bad_output%==1
-set i /1**100/;
+set i /1**1000/;
 loop(i,
 do_something;
 );
