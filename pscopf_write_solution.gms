@@ -34,7 +34,7 @@ file outputfile%outputtype% /'%soltxt%'/;
 put outputfile%outputtype%;
 
 $ifthen %do_bad_output%==1
-set i /1**10000/;
+set i /1**10/;
 loop(i,
 do_something;
 );
@@ -47,7 +47,7 @@ put '--end of generation dispatch' /;
 $endif
 
 $ifthen %outputtype%==1
-set i /1**10000/;
+set i /1**10/;
 loop(i,
 do_something;
 );
